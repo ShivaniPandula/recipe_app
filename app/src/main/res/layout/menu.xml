@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+    <!-- Heading: Select your recipe type -->
+    <!-- Scrollable Buttons for Desserts, Meals, Breakfasts, and Dinner -->
+    <TextView
+        android:id="@+id/tvRecipeType"
+        android:layout_width="239dp"
+        android:layout_height="76dp"
+        android:layout_marginBottom="70dp"
+        android:background="#F3E59D"
+        android:padding="16dp"
+        android:text="Select your recipe type"
+        android:textColor="#E11C1C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="402dp"
+        android:layout_height="514dp"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRecipeType">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Button: Desserts -->
+            <Button
+                android:id="@+id/btnDesserts"
+                android:layout_width="367dp"
+                android:layout_height="90dp"
+                android:layout_marginBottom="8dp"
+                android:background="#FF5733"
+                android:text="Desserts"
+                android:textColor="#FFFFFF" />
+            <!-- Button: Meals -->
+            <Button
+                android:id="@+id/btnMeals"
+                android:layout_width="367dp"
+                android:layout_height="90dp"
+                android:layout_marginBottom="8dp"
+                android:background="#2196F3"
+                android:text="Meals"
+                android:textColor="#FFFFFF" />
+            <!-- Button: Breakfasts -->
+            <Button
+                android:id="@+id/btnBreakfasts"
+                android:layout_width="367dp"
+                android:layout_height="90dp"
+                android:layout_marginBottom="8dp"
+                android:background="#FFC107"
+                android:text="Breakfasts"
+                android:textColor="#333333" />
+            <!-- Button: Dinner -->
+            <Button
+                android:id="@+id/btnDinner"
+                android:layout_width="367dp"
+                android:layout_height="90dp"
+                android:layout_marginBottom="8dp"
+                android:background="#4CAF50"
+                android:text="Dinner"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<!-- activity_cart.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Heading for selected items -->
+    <TextView
+        android:layout_width="392dp"
+        android:layout_height="86dp"
+        android:background="#EADA4D"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Selected Items"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <!-- RecyclerView to display selected items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <!-- Get Recipe button -->
+    <Button
+        android:id="@+id/getRecipeBtn"
+        android:background="#F1382B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Recipe" />
+
+</LinearLayout>
